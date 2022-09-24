@@ -8,7 +8,11 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <video src="/Videos/ancol.mp4" autoPlay loop muted />
-      <img src="./Images/happy-anniversary.png" width={"200px"} />
+      <img
+        src="./Images/happy-anniversary.png"
+        width={"200px"}
+        alt="apa aja bole"
+      />
       <span>Adiska Khairunissa</span>
       <span className="hafidh">from Hafidh Albar Muhammad</span>
       <div className="hero-btns">
