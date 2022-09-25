@@ -17,6 +17,10 @@ video {
   object-fit: contain;
 }
 
+.btns {
+  z-index: -1;
+}
+
 .hero-btns {
   margin-top: 200px;
 }
