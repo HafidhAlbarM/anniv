@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "../App.css";
-import { Button } from "./Button";
 import "./HeroSection.css";
-import { IoMdMailUnread } from "react-icons/io";
 import { Howl, Howler } from "howler";
-import Modal from "./Modal";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const HeroSection = () => {
   const [isPlayed, setIsPlay] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
+  const dataPhoto = [1, 2, 3, 4, 5, 6];
 
   const soundPlay = () => {
     const sound = new Howl({
@@ -37,17 +36,25 @@ const HeroSection = () => {
       />
       <span>Adiska Khairunissa</span>
       <span className="hafidh">from Hafidh Albar Muhammad</span>
-      {openModal && <Modal closeModal={setOpenModal} />}
-      <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-          onClick={() => setOpenModal(true)}
-        >
-          Baca ucapan <IoMdMailUnread />
-        </Button>
-      </div>
+      <span className="swipe-ke-bawah">Swipe ke bawah sayang...</span>
+      <Carousel
+        autoPlay={false}
+        infiniteLoop={true}
+        interval={3000}
+        showStatus={false}
+        showThumbs={false}
+      >
+        {dataPhoto.map((data, idx) => {
+          return (
+            <div>
+              <img
+                src={process.env.PUBLIC_URL + `Images/${data}.jpg`}
+                alt="data"
+              />
+            </div>
+          );
+        })}
+      </Carousel>
     </div>
   );
 };

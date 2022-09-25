@@ -21,12 +21,6 @@
   padding: 25px;
 }
 
-.modalContainer .title {
-  display: inline-block;
-  text-align: center;
-  margin-top: 5px;
-}
-
 .modalContainer .body {
   display: inline-block;
   text-align: center;
