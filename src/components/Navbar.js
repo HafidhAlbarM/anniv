@@ -45,9 +45,13 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="whatsapp://send?abid=6285817911180&text=Aku%2C%20sayang%2C%20kamu%2C%20Muach!"
+                // href="whatsapp://send?abid=6285817911180&text=Aku%2C%20sayang%2C%20kamu%2C%20Muach!"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                // href="https://web.whatsapp.com/send?phone=6285817911180?text=Aku%2C%20sayang%2C%20kamu%2C%20Muach!"
+                href="https://wa.me/6285817911180?text=Aku%2C%20sayang%2C%20kamu%2C%20Muach!"
+                target="_blank"
+                rel="noreferrer"
               >
                 Give me Feedback
               </a>
