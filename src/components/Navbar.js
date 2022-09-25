@@ -44,13 +44,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/quotes"
+              <a
+                href="whatsapp://send?abid=6285817911180&text=Aku%2C%20sayang%2C%20kamu%2C%20Muach!"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Quotes
-              </Link>
+                Give me Feedback
+              </a>
             </li>
             <li>
               <a
