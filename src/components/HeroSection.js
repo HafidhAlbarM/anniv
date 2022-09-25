@@ -38,7 +38,7 @@ const HeroSection = () => {
       <span className="hafidh">from Hafidh Albar Muhammad</span>
       <span className="swipe-ke-bawah">Swipe ke bawah sayang...</span>
       <Carousel
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         interval={3000}
         showStatus={false}
