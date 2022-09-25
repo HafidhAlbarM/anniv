@@ -28,6 +28,7 @@ export default function Modal({ closeModal }) {
           <a
             href="https://web.whatsapp.com/send?phone=6285817911180"
             target="_blank"
+            rel="noreferrer"
             className="btn-messageMe"
           >
             Balas ucapan :)
